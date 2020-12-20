@@ -83,7 +83,7 @@ numbers.forEach((button) => {
 })
 //button commands
 
-/*currently the calcutalor can only take two multi-digit positive integers and
+/*currently the calcutalor can only take multi-digit positive integers and
 evaluate them using simple mathematical operations(+,-,*,/). A way is also needed
 to minimize the screen clutter.  */
     
