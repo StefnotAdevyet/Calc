@@ -2,11 +2,14 @@ var storage1 = [], storage2 = [];
 var fin1 = ''
 var fin2 = ''
 var sign
+
+
  function test (n) {
      fin1 = fin1.concat(n);
   return fin1
   
 }
+//displays integer as a number
 
 window.console = {
   log: function(str){
@@ -38,6 +41,7 @@ function operate(a, b, oper) {
     var op = oper(b, a)
     return op;
 }
+//operator functions
 
 const numbers = document.querySelectorAll('p button');
 const eval = document.querySelector('#equal');
@@ -69,7 +73,7 @@ eval.addEventListener('click', () => {
   fin1 = operate(int1, int2, sign);
   console.log(storage1);
 })
-//executes the operate function, add doesn't work properly
+
 numbers.forEach((button) => {
   button.addEventListener('click', () => {
     console.clear;
@@ -77,9 +81,6 @@ numbers.forEach((button) => {
     console.log(test(button.value));
     })
 })
-    
-
-
 //button commands
 
 /*currently the calcutalor can only take two multi-digit positive integers and
